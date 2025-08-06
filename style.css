@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.home {
+  background: #d98515;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.adding{
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  font-size: 50px;
+  color: #03A9F4;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.container{
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+}
+.container .mis-cont{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.zikrr {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 20px 10px;
+  background: #CDDC39;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.zkr-action > * {
+  background: #FF5722;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.zkr-action span:first-child {
+  margin-left: 5px;
+}
+.zkr-cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  user-select: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  transform: translatey(-50%);
+  background: #607D8B;
+  z-index: 5;
+  color: white;
+}
+.back {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #8BC34A;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+.zkr{
+  width: fit-content;
+  margin: auto;
+}
+.zkr-cont .nums{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.over-lay{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000059;
+  z-index: 3;
+}
+.container form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #03A9F4;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 4;
+  display: none;
+}
+.container form input[type= 'text'],
+form input[type= 'number']{
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.container form input[type= 'text']:focus,
+form input[type= 'number']:focus{
+  outline: none;
+  border: none;
+}
+.container form input[type= 'submit']{
+  width: fit-content;
+  display: inline-block;
+  margin: auto;
+}
+.zikr-tooltip,.habat-tooltip{
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  display: none;
+}
+.zikr-tooltip{
+  right: 27px;
+  top: 33px;
+}
+.habat-tooltip{
+  right: 27px;
+  top: 98px;
+}
+.btn{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #CDDC39;
+  cursor: pointer;
+  margin: auto;
+  z-index: 2;
+}
+button{
+  display: inline-block;
+}
+.remvForm{
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  background: #795548;
+  cursor: pointer;
+  color: white;
+  right: 10px;
+  top: 9px;
+}
+.action{
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  gap: 20px
+}
+.action > *{
+  padding: 10px 15px;
+  background: #795548;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+}
